@@ -1,0 +1,22 @@
+UseReducer
+1. Es una funcion comun y corriente
+2. Debe de ser una funcion pura 
+    (no debe llamar a otras funciones)
+    (no debe de realizar tareas asincronas)
+    (no debe llamar localStorage o sessionStorage)
+    (no debe de requerir mas que una accion que puede tener un argunmeto)
+3. Debe de retornar un nuevo estado
+4. Usualmente solo recibe dos argumentos
+    *El valor inicial(initialState) y la accion a ejecutar
+    *La accion es otro objeto que por standar 
+    tiene una propiedad type para saber que accion se hara(crud)
+    y una propiedad payload que tiene los argumentos de la accion 
+const todoReducer=(state=initialTodos,action)=>{
+    return state;
+}
+
+Funcionamiento
+1. State se muestra a la pagina o vista
+2. Pagina va a crear una nueva accion
+3. La accion se le envia al reducer
+3. El reducer modifica el state
